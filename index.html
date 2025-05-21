@@ -20,9 +20,9 @@
 </head>
 <body>
     <h2>
-        <P ALIGN="CENTER"><FONT COLOR="BLUE">DIGITAL COMPUTER ACADEMY 2025</FONT></P>
+        <P ALIGN="CENTER"><FONT COLOR="BLUE">DIGITAL COMPUTER ACADEMY-2025</FONT></P>
     </h2>
-    <h3>Search Result by Student ID</h3>
+    <h3>Search Exam Date by Student ID</h3>
     <form id="examForm" onsubmit="return searchExamCenter();">
         <label for="examId">Enter Student ID:</label><br>
         <input type="text" id="examId" name="examId" required><br><br>
@@ -33,27 +33,27 @@
     <script>
         // Example static data; replace with real lookup logic or API call
         const examCenters = {
-            "EX101": "Punam Gour , DCA , 1st-Term : Upcoming",
-            "EX102": "Pramila Tanti , DCA , 1st-Term : Upcoming",
-            "EX103": "Deeparpan Baishya , DCA , 1st-Term : Upcoming",
-            "EX104": "Raj Roy , DCA , 1st-Term : Upcoming",
+            "EX101": "Punam Gour , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX102": "Pramila Tanti , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX103": "Deeparpan Baishya , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX104": "Raj Roy , DCA 1st-Term , 25/05/2025 : 04:00 PM",
             "EX105": "Amit Biswas , Typing , 1st-Term : Upcoming",
-            "EX106": "Subham Biswas , DCA , 1st-Term : Upcoming",
-            "EX107": "Santanu Sarkar , DCA , 1st-Term : Upcoming",
-            "EX108": "Sayan Biswas , DCA , 1st-Term : Upcoming",
-            "EX109": "Joy Sarkar , DCA , 1st-Term : Upcoming",
-            "EX110": "Gourab Sarkar , DCA , 1st-Term : Upcoming",
-            "EX111": "Chiranjit Sarkar , DCA , 1st-Term : Upcoming",
-            "EX112": "Subendu Saha , DCA , 1st-Term : Upcoming",
-            "EX113": "Jayanti Mitra , DCA , 1st-Term : Upcoming",
-            "EX114": "Nisha Das , DCA , 1st-Term : Upcoming",
+            "EX106": "Subham Biswas , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX107": "Santanu Sarkar , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX108": "Sayan Biswas , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX109": "Joy Sarkar , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX110": "Gourab Sarkar , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX111": "Chiranjit Sarkar , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX112": "Subendu Saha , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX113": "Jayanti Mitra , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX114": "Nisha Das , DCA , DCA 1st-Term , 25/05/2025 : 04:00 PM",
             "EX115": "Payel Das , DCA , 1st-Term : Upcoming",
-            "EX116": "Sayan Bhowmik , DCA , 1st-Term : Upcoming",
-            "EX117": "Prithwiraj Chakraborty , DCA , 1st-Term : Upcoming",
-            "EX118": "Raj Das , DCA , 1st-Term : Upcoming",
-            "EX119": "Nayan Rudrapaul , DCA , 1st-Term : Upcoming",
-            "EX120": "Sagarika Rudrapaul , DCA , 1st-Term : Upcoming",
-            "EX121": "Debajit Datta , DCA , 1st-Term : Upcoming",
+            "EX116": "Sayan Bhowmik , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX117": "Prithwiraj Chakraborty , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX118": "Raj Das , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX119": "Nayan Rudrapaul , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX120": "Sagarika Rudrapaul , DCA 1st-Term , 25/05/2025 : 04:00 PM",
+            "EX121": "Debajit Datta , DCA 1st-Term , 25/05/2025 : 04:00 PM",
         };
 
         function searchExamCenter() {
